@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+  header, aside, .no-print {
+    display: none !important;
+  }
+  .printable-area {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .printable-area * {
+    color: #1e293b !important;
+    border-color: #e2e8f0 !important;
+    background-color: transparent !important;
+  }
+  .printable-area .bg-slate-900,
+  .printable-area .bg-slate-950 {
+    background-color: #f8fafc !important;
+  }
+}
